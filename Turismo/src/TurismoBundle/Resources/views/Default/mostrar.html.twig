@@ -1,0 +1,7 @@
+<ul>
+      {% for turismo in turismos %}
+        <h2>{{ turismo.localidad }}</h2>
+        <p>{{turismo.poblacion}}, {{turismo.provincia}}</p>
+        <p>{{turismo.fechaReserva|date('Y-m-d')}}</p>
+        {% endfor %}
+</ul>

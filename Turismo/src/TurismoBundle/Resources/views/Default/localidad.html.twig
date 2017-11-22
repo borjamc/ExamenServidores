@@ -1,0 +1,7 @@
+<ul>
+  <!-- Solo sacamos por pantalla uno de los campos y el otro se lo pasmos por el enlace para tener el id -->
+      {% for turismo in turismos %}
+        <h2>{{ turismo.localidad }}</h2>
+        <p><a href="{{ path('detalles', {'id': turismo.id}) }}"> Mostrar </a>
+        {% endfor %}
+</ul>
